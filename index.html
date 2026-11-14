@@ -1,33 +1,383 @@
 
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benim Web Sitem</title>
-  <style>
-    body {
-      background: #111827;
-      color: white;
-      font-family: Arial;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    h1 { color: #38bdf8; }
-    button {
-      background: #38bdf8;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-  </style>
+
+  <meta name="description" content="Backend Developer portfolio. Building scalable, secure and reliable software solutions.">
+  <meta name="theme-color" content="#080b09">
+
+  <title>YOUR_NAME | Backend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <h1>Merhaba Dünya! 🚀</h1>
-  <p>Bu benim ilk web sitem!</p>
-  <button onclick="alert('Hoş geldin!')">
-    Tıkla
-  </button>
+
+  <div class="background-grid"></div>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">[</span>DEV<span class="green">.</span><span class="logo-mark">]</span>
+      </a>
+
+      <button class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-contact">Let's Talk <span>↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero container">
+
+      <div class="hero-content">
+        <div class="availability">
+          <span class="status-dot"></span>
+          AVAILABLE FOR OPPORTUNITIES
+        </div>
+
+        <p class="eyebrow">HELLO, WORLD! I'M</p>
+
+        <h1>YOUR_NAME<span class="green">.</span></h1>
+
+        <h2>Backend Developer<span class="green">_</span></h2>
+
+        <p class="hero-description">
+          I build scalable, secure and efficient backend systems.
+          Passionate about clean architecture, APIs, databases
+          and solving complex problems with elegant code.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore My Work <span>↗</span>
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/YOUR_USERNAME"
+             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://linkedin.com/in/YOUR_USERNAME"
+             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:YOUR_EMAIL@example.com">Email ↗</a>
+        </div>
+      </div>
+
+      <div class="terminal-wrapper">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span>developer@portfolio:~</span>
+            <span class="terminal-menu">•••</span>
+          </div>
+
+          <div class="terminal-body">
+            <p><span class="terminal-green">➜</span> whoami</p>
+            <h3>Backend Developer</h3>
+
+            <p><span class="terminal-green">➜</span> cat profile.json</p>
+
+            <div class="code-block">
+              <p>{</p>
+              <p>&nbsp;&nbsp;<span class="code-key">"role"</span>: <span class="code-string">"Backend Developer"</span>,</p>
+              <p>&nbsp;&nbsp;<span class="code-key">"focus"</span>: <span class="code-string">"Scalable Systems"</span>,</p>
+              <p>&nbsp;&nbsp;<span class="code-key">"passion"</span>: <span class="code-string">"Clean Code"</span>,</p>
+              <p>&nbsp;&nbsp;<span class="code-key">"status"</span>: <span class="code-string">"Building..."</span></p>
+              <p>}</p>
+            </div>
+
+            <p><span class="terminal-green">➜</span> <span class="typing">Ready to build something great.</span></p>
+            <span class="cursor"></span>
+          </div>
+        </div>
+
+        <div class="terminal-glow"></div>
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+
+      <div class="section-heading">
+        <span class="section-number">01 / ABOUT</span>
+        <h2>Behind the <span class="green">Code.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="large-text">
+            I turn complex ideas into
+            <span class="green">reliable software.</span>
+          </p>
+
+          <p>
+            I'm a backend developer passionate about building
+            powerful applications and robust server-side systems.
+            I enjoy designing APIs, working with databases and
+            creating software that performs at scale.
+          </p>
+
+          <p>
+            My approach combines problem-solving, continuous
+            learning and a strong focus on clean, maintainable code.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-symbol">{ }</span>
+            <h3>Clean Code</h3>
+            <p>Maintainable architecture</p>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-symbol">01</span>
+            <h3>Problem Solving</h3>
+            <p>Logical thinking & solutions</p>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-symbol">∞</span>
+            <h3>Always Learning</h3>
+            <p>Growing every single day</p>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-symbol">↗</span>
+            <h3>Performance</h3>
+            <p>Efficient system design</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+
+      <div class="section-heading">
+        <span class="section-number">02 / EXPERTISE</span>
+        <h2>Technical <span class="green">Stack.</span></h2>
+      </div>
+
+      <p class="section-intro">
+        Technologies and tools I use to build reliable backend solutions.
+        Replace these examples with your actual experience.
+      </p>
+
+      <div class="skills-grid">
+
+        <article class="skill-card">
+          <span class="skill-icon">⌘</span>
+          <h3>Programming</h3>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>C#</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-icon">{ }</span>
+          <h3>Backend</h3>
+          <div class="tags">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>REST APIs</span>
+            <span>Authentication</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-icon">▤</span>
+          <h3>Databases</h3>
+          <div class="tags">
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
+            <span>Redis</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-icon">⌁</span>
+          <h3>Tools & DevOps</h3>
+          <div class="tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Docker</span>
+            <span>Linux</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+
+      <div class="section-heading">
+        <span class="section-number">03 / SELECTED WORK</span>
+        <h2>Featured <span class="green">Projects.</span></h2>
+      </div>
+
+      <p class="section-intro">
+        A selection of projects demonstrating my development approach.
+      </p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_01</span>
+            <span class="project-symbol">↗</span>
+          </div>
+
+          <div class="project-visual visual-one">
+            <span>API<span class="green">/</span>CORE</span>
+          </div>
+
+          <h3>REST API Platform</h3>
+
+          <p>
+            A structured API architecture designed for
+            secure data handling and scalable applications.
+          </p>
+
+          <div class="tags">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>PostgreSQL</span>
+          </div>
+
+          <a class="project-link"
+             href="https://github.com/YOUR_USERNAME"
+             target="_blank" rel="noopener noreferrer">
+            VIEW SOURCE CODE ↗
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_02</span>
+            <span class="project-symbol">↗</span>
+          </div>
+
+          <div class="project-visual visual-two">
+            <span>AUTH<span class="green">.</span>SYS</span>
+          </div>
+
+          <h3>Authentication System</h3>
+
+          <p>
+            A secure authentication service featuring
+            user management and access control.
+          </p>
+
+          <div class="tags">
+            <span>JWT</span>
+            <span>Node.js</span>
+            <span>Security</span>
+          </div>
+
+          <a class="project-link"
+             href="https://github.com/YOUR_USERNAME"
+             target="_blank" rel="noopener noreferrer">
+            VIEW SOURCE CODE ↗
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-index">PROJECT_03</span>
+            <span class="project-symbol">↗</span>
+          </div>
+
+          <div class="project-visual visual-three">
+            <span>DATA<span class="green">.DB</span></span>
+          </div>
+
+          <h3>Database Management</h3>
+
+          <p>
+            A database-focused application with structured
+            queries and efficient data operations.
+          </p>
+
+          <div class="tags">
+            <span>SQL</span>
+            <span>Database</span>
+            <span>Backend</span>
+          </div>
+
+          <a class="project-link"
+             href="https://github.com/YOUR_USERNAME"
+             target="_blank" rel="noopener noreferrer">
+            VIEW SOURCE CODE ↗
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+
+      <div class="contact-box">
+        <span class="section-number">04 / CONTACT</span>
+
+        <h2>Let's build something <span class="green">great.</span></h2>
+
+        <p>
+          Have an interesting project or opportunity?
+          I'd love to hear from you.
+        </p>
+
+        <a href="mailto:YOUR_EMAIL@example.com"
+           class="btn btn-primary">
+          Get In Touch ↗
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <a href="#home" class="logo">DEV<span class="green">.</span></a>
+
+    <p>Designed & Built with <span class="green">♥</span> by YOUR_NAME</p>
+
+    <p>© <span id="year"></span> All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
